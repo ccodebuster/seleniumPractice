@@ -23,6 +23,7 @@ public class TestDragAndDrop extends Utility {
      WebElement draggable =driver.findElement(By.id("draggable"));
      WebElement droppable=driver.findElement(By.id("droppable"));
      actions.dragAndDrop(draggable,droppable).build().perform();
+        System.out.println("Divya");
 
     }
 
