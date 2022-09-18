@@ -30,6 +30,7 @@ public class LoginTest extends Utility {
         String expectedMessage = "Log in";
         //Assert.assertEquals(expectedMessage,actualMessage);
         Assert.assertEquals(expectedMessage, actualMess);
+        System.out.println("dhawal");
     }
 
     @Test
