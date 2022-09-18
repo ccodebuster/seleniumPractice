@@ -3,11 +3,10 @@ package actionclass;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import utilities.Utility;
 
-public class Testslider extends Utility {
+public class TestSlider extends Utility {
     String baseurl = "https://www.amazon.co.uk/";
 
     @Before
@@ -17,10 +16,11 @@ public class Testslider extends Utility {
 
     @Test
     public void testSliderExample() throws InterruptedException {
-        driver.findElement(By.id("sp-cc-accept")).click();
         JavascriptExecutor jse= (JavascriptExecutor) driver;
         Thread.sleep(2000);
         jse.executeScript("window.scrollBy(0,1500)");
+       // driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
+
     }
 
     @After
