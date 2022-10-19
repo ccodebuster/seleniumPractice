@@ -6,4 +6,8 @@ public class sapna {
         System.out.println("sapna");
         System.out.println("hi!!!!");
     }
+
+    public void ClickLoginButton() {
+        System.out.println("Hi I am Priyanka");
+    }
 }
